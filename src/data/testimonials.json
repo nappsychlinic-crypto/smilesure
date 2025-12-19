@@ -1,0 +1,58 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Priya Sharma",
+            "location": "Sector 120, Noida",
+            "rating": 5,
+            "text": "Dr. Shrestha is incredibly gentle and patient. I was very anxious about my root canal, but she explained everything clearly and made it completely painless. Highly recommend SmileSure to anyone looking for quality dental care!",
+            "treatment": "Root Canal Treatment",
+            "date": "December 2024"
+        },
+        {
+            "id": 2,
+            "name": "Rajesh Kumar",
+            "location": "Sector 119, Noida",
+            "rating": 5,
+            "text": "Best dental experience we've had as a family. The clinic is spotlessly clean, and the staff is very professional. My kids actually look forward to their dental visits now!",
+            "treatment": "Family Dental Care",
+            "date": "November 2024"
+        },
+        {
+            "id": 3,
+            "name": "Anita Verma",
+            "location": "Sector 121, Noida",
+            "rating": 5,
+            "text": "I got my teeth whitening done here and the results are amazing! Dr. Shrestha took her time to explain the process and aftercare. The clinic has all modern equipment. Very satisfied!",
+            "treatment": "Teeth Whitening",
+            "date": "November 2024"
+        },
+        {
+            "id": 4,
+            "name": "Amit Gupta",
+            "location": "Amrapali Zodiac",
+            "rating": 5,
+            "text": "Finally found a dentist I can trust! No unnecessary treatments, just honest advice. Dr. Shrestha is very knowledgeable and the consultation was thorough. The location is also very convenient.",
+            "treatment": "Dental Consultation",
+            "date": "October 2024"
+        },
+        {
+            "id": 5,
+            "name": "Meera Agarwal",
+            "location": "Sector 118, Noida",
+            "rating": 5,
+            "text": "My 6-year-old daughter was scared of dentists, but Dr. Shrestha handled her so well. Patient, kind, and very good with children. The clinic environment is also very child-friendly.",
+            "treatment": "Kids Dentistry",
+            "date": "October 2024"
+        },
+        {
+            "id": 6,
+            "name": "Vikram Singh",
+            "location": "Greater Noida",
+            "rating": 5,
+            "text": "Got my braces from SmileSure. Dr. Shrestha being an orthodontist really knows her work. Regular follow-ups are always on time, and my teeth are already looking much better after 6 months!",
+            "treatment": "Orthodontic Treatment",
+            "date": "September 2024"
+        }
+    ]
+}

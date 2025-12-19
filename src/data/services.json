@@ -1,0 +1,250 @@
+{
+    "services": [
+        {
+            "id": "dental-checkup",
+            "name": "Dental Check-up & Consultation",
+            "shortDescription": "Comprehensive oral examination and treatment planning",
+            "icon": "Stethoscope",
+            "category": "Preventive",
+            "description": "A routine dental check-up helps detect problems early and maintain good oral health. Our thorough examination includes assessment of teeth, gums, and overall oral health.",
+            "whenNeeded": [
+                "Tooth pain or sensitivity",
+                "Bleeding gums",
+                "Routine preventive care",
+                "Bad breath concerns"
+            ],
+            "whatToExpect": [
+                "Complete oral examination",
+                "Discussion of concerns",
+                "Treatment planning if required",
+                "Oral hygiene guidance"
+            ],
+            "painLevel": "Minimal to none",
+            "duration": "30-45 minutes",
+            "sittings": "1",
+            "recommended": "Every 6 months"
+        },
+        {
+            "id": "scaling-polishing",
+            "name": "Scaling & Polishing",
+            "shortDescription": "Professional teeth cleaning for healthier gums",
+            "icon": "Sparkles",
+            "category": "Preventive",
+            "description": "Professional cleaning to remove plaque and tartar buildup that regular brushing cannot eliminate. Essential for maintaining gum health and preventing periodontal disease.",
+            "benefits": [
+                "Healthier gums",
+                "Fresher breath",
+                "Reduced risk of gum disease",
+                "Brighter, cleaner teeth"
+            ],
+            "painLevel": "Minimal discomfort",
+            "duration": "30-45 minutes",
+            "sittings": "1",
+            "recommended": "Every 6 months"
+        },
+        {
+            "id": "digital-xray",
+            "name": "Digital X-rays",
+            "shortDescription": "Safe, accurate dental imaging",
+            "icon": "Scan",
+            "category": "Preventive",
+            "description": "Digital X-rays use minimal radiation and provide instant, accurate images for proper diagnosis. Essential for detecting hidden cavities, bone loss, and other issues.",
+            "benefits": [
+                "90% less radiation than traditional X-rays",
+                "Instant results",
+                "Accurate diagnosis",
+                "Easy to share and store"
+            ],
+            "painLevel": "None",
+            "duration": "5-10 minutes",
+            "sittings": "1"
+        },
+        {
+            "id": "fillings",
+            "name": "Dental Fillings",
+            "shortDescription": "Restore decayed teeth with tooth-colored materials",
+            "icon": "CircleDot",
+            "category": "Restorative",
+            "description": "Dental fillings restore teeth damaged by decay. We use modern tooth-colored composite materials that blend naturally with your teeth.",
+            "whenNeeded": [
+                "Visible holes in teeth",
+                "Tooth sensitivity",
+                "Food getting stuck",
+                "Dark spots on teeth"
+            ],
+            "painLevel": "Minimal with local anesthesia",
+            "duration": "30-60 minutes",
+            "sittings": "1",
+            "aftercare": "Avoid hard foods for 24 hours"
+        },
+        {
+            "id": "root-canal",
+            "name": "Root Canal Treatment",
+            "shortDescription": "Save your natural tooth from infection",
+            "icon": "Activity",
+            "category": "Restorative",
+            "description": "Root canal treatment is done to save a badly decayed or infected tooth. Modern techniques make the procedure comfortable and manageable.",
+            "symptoms": [
+                "Severe tooth pain",
+                "Sensitivity to hot or cold",
+                "Swelling near the tooth",
+                "Darkening of the tooth"
+            ],
+            "painLevel": "Comfortable with modern anesthesia",
+            "duration": "60-90 minutes per sitting",
+            "sittings": "1-2 visits",
+            "aftercare": "Crown may be advised for strength"
+        },
+        {
+            "id": "crowns-bridges",
+            "name": "Crowns & Bridges",
+            "shortDescription": "Restore damaged or missing teeth",
+            "icon": "Crown",
+            "category": "Restorative",
+            "description": "Crowns protect weak or damaged teeth, while bridges replace missing teeth. Both restore function and aesthetics to your smile.",
+            "whenNeeded": [
+                "After root canal treatment",
+                "Cracked or broken teeth",
+                "Missing teeth",
+                "Severely worn teeth"
+            ],
+            "painLevel": "Minimal",
+            "duration": "2 appointments",
+            "sittings": "2-3 visits",
+            "aftercare": "Avoid sticky foods initially"
+        },
+        {
+            "id": "teeth-whitening",
+            "name": "Teeth Whitening",
+            "shortDescription": "Brighten your smile safely",
+            "icon": "Sun",
+            "category": "Cosmetic",
+            "description": "Professional teeth whitening safely removes stains and discoloration, giving you a brighter, more confident smile.",
+            "benefits": [
+                "Noticeably whiter teeth",
+                "Safe, supervised procedure",
+                "Long-lasting results",
+                "Boost in confidence"
+            ],
+            "painLevel": "Possible temporary sensitivity",
+            "duration": "60-90 minutes",
+            "sittings": "1-2 visits",
+            "aftercare": "Avoid staining foods for 48 hours"
+        },
+        {
+            "id": "smile-design",
+            "name": "Smile Design",
+            "shortDescription": "Complete smile makeover",
+            "icon": "Palette",
+            "category": "Cosmetic",
+            "description": "Comprehensive smile makeover combining multiple treatments to achieve your ideal smile. Customized treatment plans for beautiful, natural-looking results.",
+            "includes": [
+                "Teeth whitening",
+                "Veneers",
+                "Crowns",
+                "Orthodontic alignment"
+            ],
+            "painLevel": "Varies by treatment",
+            "duration": "Multiple appointments",
+            "sittings": "Varies by case"
+        },
+        {
+            "id": "extractions",
+            "name": "Tooth Extractions",
+            "shortDescription": "Safe, painless tooth removal",
+            "icon": "Minus",
+            "category": "Surgical",
+            "description": "When a tooth cannot be saved, extraction is performed with care and precision. We ensure comfort throughout the procedure.",
+            "whenNeeded": [
+                "Severely decayed teeth",
+                "Wisdom tooth problems",
+                "Orthodontic requirements",
+                "Fractured teeth beyond repair"
+            ],
+            "painLevel": "Comfortable with anesthesia",
+            "duration": "15-45 minutes",
+            "sittings": "1 visit",
+            "aftercare": "Follow post-extraction care instructions"
+        },
+        {
+            "id": "dental-implants",
+            "name": "Dental Implants",
+            "shortDescription": "Permanent solution for missing teeth",
+            "icon": "Pin",
+            "category": "Surgical",
+            "description": "Dental implants are the gold standard for replacing missing teeth. They look, feel, and function like natural teeth.",
+            "benefits": [
+                "Permanent solution",
+                "Natural appearance",
+                "Preserves bone",
+                "No damage to adjacent teeth"
+            ],
+            "painLevel": "Manageable with anesthesia",
+            "duration": "Multiple appointments over months",
+            "sittings": "3-4 visits over 3-6 months",
+            "aftercare": "Maintain regular oral hygiene"
+        },
+        {
+            "id": "orthodontics",
+            "name": "Orthodontic Treatment",
+            "shortDescription": "Straighten teeth and correct bite",
+            "icon": "AlignCenter",
+            "category": "Specialty",
+            "description": "Comprehensive orthodontic treatment to align teeth and correct bite problems. Dr. Shrestha Singh specializes in orthodontics and dentofacial orthopaedics.",
+            "options": [
+                "Traditional metal braces",
+                "Ceramic braces",
+                "Clear aligners",
+                "Retainers"
+            ],
+            "painLevel": "Mild initial discomfort",
+            "duration": "12-24 months typically",
+            "sittings": "Monthly follow-ups",
+            "aftercare": "Retainer wear as prescribed"
+        },
+        {
+            "id": "kids-dentistry",
+            "name": "Kids Dentistry",
+            "shortDescription": "Gentle dental care for children",
+            "icon": "Baby",
+            "category": "Specialty",
+            "description": "Child-friendly dental care in a warm, welcoming environment. We make dental visits fun and stress-free for your little ones.",
+            "services": [
+                "First dental visit guidance",
+                "Preventive care",
+                "Fluoride application",
+                "Dental sealants",
+                "Cavity treatment"
+            ],
+            "painLevel": "Gentle, child-appropriate care",
+            "recommended": "First visit by age 1, then every 6 months"
+        }
+    ],
+    "categories": [
+        {
+            "id": "Preventive",
+            "name": "Preventive Care",
+            "description": "Regular care to maintain oral health"
+        },
+        {
+            "id": "Restorative",
+            "name": "Restorative Treatments",
+            "description": "Repair and restore damaged teeth"
+        },
+        {
+            "id": "Cosmetic",
+            "name": "Cosmetic Dentistry",
+            "description": "Enhance your smile's appearance"
+        },
+        {
+            "id": "Surgical",
+            "name": "Surgical Procedures",
+            "description": "Advanced dental surgeries"
+        },
+        {
+            "id": "Specialty",
+            "name": "Specialty Services",
+            "description": "Specialized dental treatments"
+        }
+    ]
+}

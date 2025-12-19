@@ -1,0 +1,54 @@
+{
+    "faqs": [
+        {
+            "id": 1,
+            "question": "Is dental treatment painful?",
+            "answer": "Most dental procedures today are comfortable due to modern techniques and anesthesia. At SmileSure, we take special care with anxious patients and use gentle approaches to ensure your comfort. We always explain what to expect and can take breaks if needed."
+        },
+        {
+            "id": 2,
+            "question": "How often should I visit the dentist?",
+            "answer": "A routine dental check-up every six months is recommended for most people. Regular visits help detect problems early when they're easier and less expensive to treat. Some conditions may require more frequent visits as advised by your dentist."
+        },
+        {
+            "id": 3,
+            "question": "Do you treat children?",
+            "answer": "Yes, we provide gentle, child-friendly dental care. Dr. Shrestha Singh has experience working with children and first-time patients. We make dental visits fun and stress-free for your little ones. We recommend bringing children for their first visit by age 1."
+        },
+        {
+            "id": 4,
+            "question": "Are dental X-rays safe?",
+            "answer": "Yes, digital X-rays use minimal radiation (up to 90% less than traditional X-rays) and are safe when clinically required. We only recommend X-rays when necessary for proper diagnosis and treatment planning."
+        },
+        {
+            "id": 5,
+            "question": "What happens during my first visit?",
+            "answer": "During your first visit, we'll conduct a thorough oral examination, discuss your dental history and any concerns, take necessary X-rays if required, and create a treatment plan. We focus on understanding your needs and explaining all options clearly."
+        },
+        {
+            "id": 6,
+            "question": "Do you handle dental emergencies?",
+            "answer": "Yes, please contact us immediately in case of severe pain, swelling, or dental injury. Call us at +91 9220688266 for emergency guidance. We try our best to accommodate emergency cases as soon as possible."
+        },
+        {
+            "id": 7,
+            "question": "What payment options do you accept?",
+            "answer": "We accept cash, UPI payments, and all major debit/credit cards. Treatment costs are discussed upfront before any procedure, and we believe in transparent pricing with no hidden charges."
+        },
+        {
+            "id": 8,
+            "question": "How do I book an appointment?",
+            "answer": "You can book an appointment by calling us at +91 9220688266, messaging us on WhatsApp, or using the appointment form on our website. Our team will confirm your appointment at the earliest convenience."
+        },
+        {
+            "id": 9,
+            "question": "Is parking available at the clinic?",
+            "answer": "Yes, free parking is available in the Market Complex at Amrapali Zodiac, Sector 120. The clinic is conveniently located and easily accessible."
+        },
+        {
+            "id": 10,
+            "question": "What are your clinic timings?",
+            "answer": "We are open Monday to Friday from 10:00 AM to 8:00 PM, Saturday from 10:00 AM to 6:00 PM, and Sunday by appointment only. Please call ahead to confirm availability."
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+  "clinic": {
+    "name": "SmileSure",
+    "tagline": "Dental Care",
+    "fullName": "SmileSure Dental Care",
+    "description": "Comprehensive, gentle dental care for families in Sector 120, Noida",
+    "phone": "+91 9220688266",
+    "email": "smilesuredc@gmail.com",
+    "whatsapp": "919220688266",
+    "address": {
+      "line1": "Shop No. 1, Market Complex",
+      "line2": "Amrapali Zodiac, Sector 120",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "pincode": "201301"
+    },
+    "fullAddress": "Shop No. 1, Market Complex, Amrapali Zodiac, Sector 120, Noida",
+    "mapUrl": "https://maps.google.com/?q=Amrapali+Zodiac+Sector+120+Noida",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8975!2d77.3911!3d28.5847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM1JzA0LjkiTiA3N8KwMjMnMjguMCJF!5e0!3m2!1sen!2sin!4v1",
+    "timings": {
+      "weekdays": "10:00 AM - 8:00 PM",
+      "saturday": "10:00 AM - 6:00 PM",
+      "sunday": "By Appointment Only"
+    },
+    "parking": "Free parking available in the market complex"
+  },
+  "doctor": {
+    "name": "Dr. Shrestha Singh",
+    "firstName": "Shrestha",
+    "lastName": "Singh",
+    "title": "Dr.",
+    "degrees": "BDS, MDS (Orthodontics and Dentofacial Orthopaedics)",
+    "designation": "Consultant Orthodontist",
+    "dciId": "192927226767",
+    "experience": "Specialist in Orthodontics",
+    "bio": "Dr. Shrestha Singh is a registered dental surgeon with a patient-first approach to dentistry. She completed her dental education and is registered with the Dental Council of India. Her clinical practice focuses on providing ethical, evidence-based dental care with clear communication and minimal discomfort.",
+    "philosophy": "My goal is simple — to provide honest dental care in a safe and comfortable environment, without unnecessary procedures.",
+    "specializations": [
+      "Orthodontics",
+      "Dentofacial Orthopaedics",
+      "Preventive Dentistry",
+      "Painless Restorative Treatments"
+    ],
+    "approach": "Dr. Singh strongly believes that informed patients make better decisions. She takes time to explain treatment options, procedures, and after-care so patients feel confident and relaxed. She has a special interest in preventive dentistry, painless restorative treatments, and helping patients who experience dental anxiety."
+  },
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Our Clinic", "href": "/clinic" },
+    { "label": "Testimonials", "href": "/testimonials" },
+    { "label": "FAQ", "href": "/faq" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "social": {
+    "facebook": "https://facebook.com/smilesuredc",
+    "instagram": "https://instagram.com/smilesuredc",
+    "whatsapp": "https://wa.me/919220688266"
+  },
+  "hero": {
+    "headline": "Gentle, Ethical Dental Care for You and Your Family",
+    "subheadline": "Comprehensive dental treatment in a clean, modern, and patient-focused clinic in Sector 120, Noida.",
+    "ctaPrimary": "Book an Appointment",
+    "ctaSecondary": "WhatsApp Us"
+  },
+  "whyChooseUs": [
+    {
+      "title": "Individual Attention",
+      "description": "Every patient receives personalized care and treatment plans tailored to their unique needs.",
+      "icon": "Heart"
+    },
+    {
+      "title": "Modern Equipment",
+      "description": "State-of-the-art dental technology for accurate diagnosis and comfortable treatments.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Clear Communication",
+      "description": "We explain treatment options in simple terms so you can make informed decisions.",
+      "icon": "MessageCircle"
+    },
+    {
+      "title": "Hygienic Environment",
+      "description": "Strict sterilization protocols ensure your safety at every visit.",
+      "icon": "Shield"
+    },
+    {
+      "title": "Comfortable Care",
+      "description": "Special attention to anxious patients and children for a stress-free experience.",
+      "icon": "Smile"
+    },
+    {
+      "title": "Transparent Pricing",
+      "description": "No hidden charges. Clear treatment plans with upfront cost estimates.",
+      "icon": "IndianRupee"
+    }
+  ],
+  "intro": {
+    "title": "Welcome to SmileSure Dental Care",
+    "content": "At SmileSure, we believe dental care should be calm, transparent, and respectful. Our focus is not just treatment, but helping patients understand their oral health and feel comfortable at every step. Whether you are visiting for a routine check-up or a specific concern, you can expect honest advice, modern techniques, and strict hygiene standards."
+  },
+  "clinicFeatures": [
+    "Sterilized instruments for every patient",
+    "Modern dental chair and equipment",
+    "Clean, well-ventilated treatment rooms",
+    "Child-friendly environment",
+    "Digital X-rays with minimal radiation",
+    "Comfortable waiting area"
+  ]
+}
