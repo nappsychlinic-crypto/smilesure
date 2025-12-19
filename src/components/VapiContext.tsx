@@ -14,7 +14,7 @@ interface VapiContextType {
     isSpeaking: boolean;
     messages: Message[];
     showTranscript: boolean;
-    startCall: () => Promise<void>;
+    startCall: (language?: "en" | "hi") => Promise<void>;
     endCall: () => void;
 }
 
@@ -52,15 +52,40 @@ Available appointment slots:
 `;
 };
 
-const assistantConfig = {
-    name: "SmileSure Appointment Assistant",
-    model: {
-        provider: "openai" as const,
-        model: "gpt-4o-mini" as const,
-        messages: [
-            {
-                role: "system" as const,
-                content: `You are a friendly and professional appointment booking assistant for SmileSure Dental Care, a dental clinic located in Sector 120, Noida. The clinic is run by Dr. Shrestha Singh, who is a Consultant Orthodontist with a BDS and MDS in Orthodontics and Dentofacial Orthopaedics.
+const getAssistantConfig = (language: "en" | "hi") => {
+    const isHindi = language === "hi";
+
+    return {
+        name: isHindi ? "SmileSure Hindi Assistant" : "SmileSure Appointment Assistant",
+        model: {
+            provider: "openai" as const,
+            model: "gpt-4o-mini" as const,
+            messages: [
+                {
+                    role: "system" as const,
+                    content: isHindi
+                        ? `You are a friendly and professional appointment booking assistant for SmileSure Dental Care, a dental clinic located in Sector 120, Noida. Speak in Hinglish (a mix of Hindi and English) which is natural for Indian speakers.
+                        
+The clinic is run by Dr. Shrestha Singh, who is a Consultant Orthodontist.
+
+Your job is to help patients book dental appointments. Be warm, conversational, and helpful.
+
+${getAvailableSlots()}
+
+When booking an appointment, collect:
+1. Patient's full name
+2. Phone number (for confirmation)
+3. Preferred slot from the available options
+4. Brief reason for visit
+
+After collecting all details, confirm the booking by repeating back the information and let them know they'll receive a confirmation call from the clinic.
+
+Keep responses concise and natural.
+
+Clinic contact: ${process.env.NEXT_PUBLIC_CLINIC_PHONE || "+918799773806"}
+Clinic hours: Monday to Saturday, 10 AM to 8 PM
+Address: Shop No. 1, Market Complex, Amrapali Zodiac, Sector 120, Noida`
+                        : `You are a friendly and professional appointment booking assistant for SmileSure Dental Care, a dental clinic located in Sector 120, Noida. The clinic is run by Dr. Shrestha Singh, who is a Consultant Orthodontist with a BDS and MDS in Orthodontics and Dentofacial Orthopaedics.
 
 Your job is to help patients book dental appointments. Be warm, conversational, and helpful.
 
@@ -79,20 +104,23 @@ Keep responses concise and natural - this is a voice conversation. Avoid long mo
 Clinic contact: ${process.env.NEXT_PUBLIC_CLINIC_PHONE || "+918799773806"}
 Clinic hours: Monday to Saturday, 10 AM to 8 PM
 Address: Shop No. 1, Market Complex, Amrapali Zodiac, Sector 120, Noida`,
-            },
-        ],
-    },
-    voice: {
-        provider: "11labs" as const,
-        voiceId: "21m00Tcm4TlvDq8ikWAM",
-    },
-    firstMessage:
-        "Hello! Welcome to SmileSure Dental Care. I'm here to help you book an appointment with Dr. Shrestha Singh. How can I assist you today?",
-    transcriber: {
-        provider: "deepgram" as const,
-        model: "nova-2",
-        language: "en-IN" as const,
-    },
+                },
+            ],
+        },
+        voice: {
+            provider: "11labs" as const,
+            voiceId: isHindi ? "H6QPv2pQZDcGqLwDTIJQ" : "21m00Tcm4TlvDq8ikWAM",
+            model: isHindi ? ("eleven_multilingual_v2" as const) : ("eleven_turbo_v2_5" as const),
+        },
+        firstMessage: isHindi
+            ? "Namaste! SmileSure Dental Care mein swagat hai. Main Dr. Shrestha Singh ke saath appointment book karne mein aapki madad kar sakti hoon. Bataiye main kaise madad karoon?"
+            : "Hello! Welcome to SmileSure Dental Care. I'm here to help you book an appointment with Dr. Shrestha Singh. How can I assist you today?",
+        transcriber: {
+            provider: "deepgram" as const,
+            model: isHindi ? "nova-3" : "nova-2",
+            language: isHindi ? ("multi" as const) : ("en-IN" as const),
+        },
+    };
 };
 
 export function VapiProvider({ children }: { children: ReactNode }) {
@@ -159,7 +187,7 @@ export function VapiProvider({ children }: { children: ReactNode }) {
         };
     }, []);
 
-    const startCall = useCallback(async () => {
+    const startCall = useCallback(async (language: "en" | "hi" = "en") => {
         if (!vapiRef.current) {
             console.error("Vapi not initialized");
             return;
@@ -169,7 +197,7 @@ export function VapiProvider({ children }: { children: ReactNode }) {
         setMessages([]);
 
         try {
-            await vapiRef.current.start(assistantConfig);
+            await vapiRef.current.start(getAssistantConfig(language));
         } catch (error) {
             console.error("Failed to start call:", error);
             setIsConnecting(false);
