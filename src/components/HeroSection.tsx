@@ -87,7 +87,7 @@ function HeroContent() {
                         </div>
 
                         {/* AI Booking Button */}
-                        <div className="flex justify-center lg:justify-start animate-fade-in-up delay-400">
+                        <div className="w-full sm:w-auto flex justify-center lg:justify-start animate-fade-in-up delay-400">
                             <VapiBookingButton />
                         </div>
 

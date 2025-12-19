@@ -11,9 +11,9 @@ export default function VapiBookingButton() {
             <button
                 onClick={endCall}
                 disabled={isConnecting}
-                className={`group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:-translate-y-1 ${isCallActive
-                        ? "bg-red-500 text-white hover:bg-red-600 shadow-lg shadow-red-500/25"
-                        : "bg-gray-400 text-white cursor-wait"
+                className={`group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto ${isCallActive
+                    ? "bg-red-500 text-white hover:bg-red-600 shadow-lg shadow-red-500/25"
+                    : "bg-gray-400 text-white cursor-wait"
                     }`}
             >
                 {isConnecting ? (
@@ -32,17 +32,17 @@ export default function VapiBookingButton() {
     }
 
     return (
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <button
                 onClick={() => startCall("en")}
-                className="group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-1"
+                className="cursor-pointer group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
             >
                 <Bot className="w-5 h-5" />
                 Book with AI - English
             </button>
             <button
                 onClick={() => startCall("hi")}
-                className="group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-lg bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300 hover:-translate-y-1"
+                className="cursor-pointer group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-lg bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
             >
                 <Bot className="w-5 h-5" />
                 Book with AI - Hindi
