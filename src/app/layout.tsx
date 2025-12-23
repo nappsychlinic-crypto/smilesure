@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { AuthProvider } from "@/components/webapp/AuthContext";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -52,9 +51,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${inter.variable} font-sans antialiased bg-white text-gray-900`}
       >
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
